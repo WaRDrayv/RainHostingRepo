@@ -1,4 +1,4 @@
 <template>
-    <app-header />
-    <slot />
+  <app-header />
+  <slot />
 </template>
