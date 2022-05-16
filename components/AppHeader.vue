@@ -1,31 +1,27 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="container mx-auto pt-8 px-4">
+  <div class="container mx-auto pt-8 px-4 shadow-xl">
     <header class="flex justify-between text-2xl">
-      <a class="w-1/5" href="">Logo</a>
+      <nuxt-link class="w-1/5" to="/"><i class="logo" /></nuxt-link>
       <ul class="flex w-4/5 justify-between">
-        <li><a href="">About</a></li>
-        <li class=""><nuxt-link to="/vps">VPN</nuxt-link></li>
-        <li><a href="">Dedicated</a></li>
-        <li><a href="">Cloud</a></li>
-        <li><a href="">Calculator</a></li>
+        <li><nuxt-link to="/about">About</nuxt-link></li>
+        <li><nuxt-link to="/vps">VPN</nuxt-link></li>
+        <li><nuxt-link to="/dedicated">Dedicated</nuxt-link></li>
+        <li><nuxt-link to="/cloud">Cloud</nuxt-link></li>
+        <li><nuxt-link to="/calculator">Calculator</nuxt-link></li>
         <li></li>
       </ul>
     </header>
   </div>
-  <div class="flex">
-    <ul>
-      <li>sd</li>
-      <li>few</li>
-    </ul>
-    <table class="bg-red-400">
-      <td>1</td>
-      <td>2</td>
-      <td>3</td>
-    </table>
-  </div>
-  <div>2nd div</div>
 </template>
 
-<style lang="scss"></style>
+<style>
+.logo {
+  width: 184px;
+  height: 100px;
+  background-image: url("/image/RainHostingLogo.png");
+  background-size: contain;
+  display: block;
+}
+</style>

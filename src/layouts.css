@@ -1,0 +1,8 @@
+@import url('./input.css'); /*Импортим tailwind*/
+
+#main-layout{
+    display: grid;
+    grid-template-rows: auto 10fr auto;
+    min-height: 100vh;
+    
+}
