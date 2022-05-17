@@ -1,3 +1,7 @@
+<script lang="ts">
+//definePageMeta({ layout: "custom" });
+</script>
+
 <template>
   <div>
     <Title>VPS/VPN</Title>
@@ -38,7 +42,3 @@
     </div>
   </div>
 </template>
-
-<script lang="ts">
-//definePageMeta({ layout: "custom" });
-</script>

@@ -1,3 +1,7 @@
+<script>
+import "@/src/layouts.css";
+</script>
+
 <template>
   <div id="main-layout">
     <app-header />
@@ -6,7 +10,3 @@
     <app-footer />
   </div>
 </template>
-
-<script>
-import "@/src/layouts.css";
-</script>
