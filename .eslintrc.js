@@ -7,9 +7,17 @@ module.exports = {
   rules: {
     // override/add rules settings here, such as:
     // 'vue/no-unused-vars': 'error'
-    "vue/require-default-prop": ["error"],
+    "vue/require-default-prop": ["warn"],
+    "vue/require-prop-types": ["warn"],
     "prettier/prettier": ["error"],
     "no-undef": ["off"],
     "vue/multi-word-component-names": ["warn"],
+    "vue/no-empty-component-block": ["error"],
+    "vue/component-tags-order": [
+      "error",
+      {
+        order: ["script", "template", "style"],
+      },
+    ],
   },
 };
