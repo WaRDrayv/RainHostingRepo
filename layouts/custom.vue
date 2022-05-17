@@ -1,5 +1,5 @@
 <script>
-import "@/src/layouts.css";
+import "@/assets/layouts.css";
 </script>
 
 <template>

@@ -1,5 +1,5 @@
 <script>
-//import "@/src/input.css";
+//import "@/assets/input.css";
 </script>
 
 <template>
