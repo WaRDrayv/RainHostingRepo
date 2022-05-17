@@ -3,10 +3,12 @@ import "@/src/input.css";
 </script>
 
 <template>
-  <Title>Server calculator</Title>
   <div>
+    <Title>Server calculator</Title>
     <div>
-      <div>calculator page</div>
+      <div>
+        <div>calculator page</div>
+      </div>
     </div>
   </div>
 </template>

@@ -3,31 +3,33 @@
 </script>
 
 <template>
-  <Title>RainHosting</Title>
   <div>
+    <Title>RainHosting</Title>
     <div>
       <div>
-        <h1 class="text-2xl font-mono font-bold">RainHosting</h1>
-        <p>
-          Высококачественный хостинг с серверами в сертифицированных дата
-          центрах РФ и зарубежом(дата центры в других странах смотрите в разделе
-          About/О нас)
-        </p>
-        <p
-          class="font-extrabold text-2xl"
-          style="margin-top: 50px; text-align: center"
-        >
-          Наш хостинг входит в топ лучших хостингов евразии. Наш хостинг
-          предоставляет для всех
-          <b>тарифах:</b>
-        </p>
-      </div>
-      <div>
-        <table>
-          <tr>
-            <TheBenefitsTable />
-          </tr>
-        </table>
+        <div>
+          <h1 class="text-2xl font-mono font-bold">RainHosting</h1>
+          <p>
+            Высококачественный хостинг с серверами в сертифицированных дата
+            центрах РФ и зарубежом(дата центры в других странах смотрите в
+            разделе About/О нас)
+          </p>
+          <p
+            class="font-extrabold text-2xl"
+            style="margin-top: 50px; text-align: center"
+          >
+            Наш хостинг входит в топ лучших хостингов евразии. Наш хостинг
+            предоставляет для всех
+            <b>тарифах:</b>
+          </p>
+        </div>
+        <div>
+          <table>
+            <tr>
+              <TheBenefitsTable />
+            </tr>
+          </table>
+        </div>
       </div>
     </div>
   </div>

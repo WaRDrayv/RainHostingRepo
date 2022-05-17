@@ -3,10 +3,12 @@ import "@/src/input.css";
 </script>
 
 <template>
-  <Title>About project</Title>
   <div>
+    <Title>About project</Title>
     <div>
-      <div>about project</div>
+      <div>
+        <div>about project</div>
+      </div>
     </div>
   </div>
 </template>
