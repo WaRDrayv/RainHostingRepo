@@ -1,5 +1,5 @@
-<script setup lang="ts">
-import "@/src/input.css";
+<script>
+//import "@/src/input.css";
 </script>
 
 <template>
@@ -25,16 +25,7 @@ import "@/src/input.css";
       <div>
         <table>
           <tr>
-            <TheBenefitsTable
-              title="Host1"
-              price="190"
-              type="start"
-              rom="5Gb"
-              ram="2Gb"
-              cores="1 core"
-              dbs="unlimit"
-              ssl="Есть"
-            />
+            <TheBenefitsTable />
           </tr>
         </table>
       </div>
