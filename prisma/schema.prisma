@@ -11,32 +11,32 @@ datasource db {
 }
 
 model Customer {
-  id       Int @id @default(autoincrement())
-  user     String? @map("name")
-  email    String @unique
+  id       Int     @id @default(autoincrement())
+  user     String?
+  email    String  @unique
   password String?
   orders   Order[]
 }
 
-model HostingsSolution {
-  id    Int @id @default(autoincrement())
+model HostingSolution {
+  id    Int     @id @default(autoincrement())
   title String?
-  price Int?
+  price String?
   type  String?
-  rom   Int
-  ram   Int
-  cores Int
-  //order Order @relation(fields: [id], references: [id])
+  rom   String
+  ram   String
+  cores String
+  dbs   String
+  ssl   String
+  order Order[]
 }
 
 model Order {
-  id         Int @id @default(autoincrement())
-  data       DateTime
-  title      String
-  customerID Int
-  customer   Customer  @relation(fields: [customerID], references: [id])
-  solutionID Int //HostingsSolution[]
-  status String?
-  //employee Employee?
+  id               Int               @id @default(autoincrement())
+  date             DateTime          @default(now())
+  title            String
+  customer         Customer?         @relation(fields: [customerId], references: [id])
+  HostingSolutions HostingSolution[]
+  status           String?
+  customerId       Int?
 }
-

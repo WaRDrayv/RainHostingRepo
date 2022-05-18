@@ -1,33 +1,28 @@
-<script>
-export default {
-  props: {
-    item: {
-      type: Object,
-      default: () => ({}),
-    },
+<script setup>
+const props = defineProps({
+  item: {
+    type: Object,
+    default: () => ({}),
   },
-  emits: ["update"],
-  data() {
-    return {};
-  },
-};
+});
+const { order } = useOrder();
 </script>
 
 <template>
   <div class="cards-fild mt-20 mx-10 w-1/5 h-1/5">
     <div class="h-4/5 bg-slate-400 rounded-lg">
       <ul class="p-5">
-        <li class="text-xl font-bold">{{ item.title }}</li>
-        <li>{{ item.price + " Кредитов/месяц" }}</li>
-        <li class="mb-6 mt-2 border-b-2">{{ item.type }}</li>
-        <li>{{ "HDD: " + item.rom }}</li>
-        <li>{{ "RAM: " + item.ram }}</li>
-        <li>{{ "Cors: " + item.cores }}</li>
-        <li>{{ "Баз данных: " + item.dbs }}</li>
-        <li>{{ "SSL сертификат: " + item.ssl }}</li>
+        <li class="text-xl font-bold">{{ props.item.title }}</li>
+        <li>{{ props.item.price + " Кредитов/месяц" }}</li>
+        <li class="mb-6 mt-2 border-b-2">{{ props.item.type }}</li>
+        <li>{{ "HDD: " + props.item.rom }}</li>
+        <li>{{ "RAM: " + props.item.ram }}</li>
+        <li>{{ "Cors: " + props.item.cores }}</li>
+        <li>{{ "Баз данных: " + props.item.dbs }}</li>
+        <li>{{ "SSL сертификат: " + props.item.ssl }}</li>
         <button
           class="button-order border-solid border-black border-2 rounded-lg mt-5"
-          @click="emit('update', item)"
+          @click="order(props.item)"
         >
           Заказать
         </button>
