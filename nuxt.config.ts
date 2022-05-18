@@ -7,5 +7,8 @@ export default defineNuxtConfig({
     postcss: {
       postcssOptions: require('./postcss.config.js'),
     },
-  }
+  },
+  runtimeConfig: {
+    accessSecret: '',
+  },
 })

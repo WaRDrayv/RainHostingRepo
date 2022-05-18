@@ -9,5 +9,6 @@
       </div>
       <app-footer />
     </div>
+    <div id="dialog" />
   </div>
 </template>
