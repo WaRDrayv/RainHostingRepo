@@ -1,6 +1,8 @@
 <script setup lang="ts">
 const user = useUser();
 
+const username = computed(() => user.value.user.user);
+
 const dialogs = reactive({ signIn: false, signUp: false });
 </script>
 
@@ -15,6 +17,7 @@ const dialogs = reactive({ signIn: false, signUp: false });
       <nuxt-link :to="{ path: '/calculator' }">Calculator</nuxt-link>
       <template v-if="user">
         <button @click="user = null">Sign out</button>
+        {{ username }}
       </template>
       <template v-else>
         <dialog-sign-in
@@ -45,5 +48,7 @@ const dialogs = reactive({ signIn: false, signUp: false });
   display: grid;
   grid-auto-flow: column;
   width: 100%;
+  align-items: center;
+  justify-items: center;
 }
 </style>
